@@ -1,0 +1,87 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "node --max-old-space-size=8000 node_modules/@vue/cli-service/bin/vue-cli-service.js build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@kangc/v-md-editor": "^2.3.17",
+    "@videojs-player/vue": "^1.0.0",
+    "@vueuse/core": "^10.3.0",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "@wangeditor/plugin-formula": "^1.0.11",
+    "autoprefixer": "^9.8.8",
+    "axios": "^1.4.0",
+    "core-js": "^3.8.3",
+    "cos-js-sdk-v5": "^1.4.21",
+    "echarts": "^5.4.3",
+    "element-plus": "^2.3.8",
+    "gsap": "^3.12.2",
+    "html2canvas": "^1.4.1",
+    "jszip": "^3.10.1",
+    "katex": "^0.15.6",
+    "marked": "^9.1.2",
+    "postcss": "^7.0.39",
+    "qs": "^6.11.2",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "tocbot": "^4.21.1",
+    "uuid": "^9.0.1",
+    "video.js": "^7.21.5",
+    "videojs-contrib-hls": "^5.15.0",
+    "vue": "^3.2.13",
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-easy-lightbox": "^1.16.0",
+    "vue-router": "^4.2.4",
+    "vue3-qrcode": "^0.0.2",
+    "vuex": "^4.1.0",
+    "wangeditor": "^4.7.15",
+    "zrender": "^5.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.12.16",
+    "@babel/plugin-transform-private-methods": "^7.22.5",
+    "@babel/preset-env": "^7.23.3",
+    "@types/uuid": "^9.0.6",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "webpack-obfuscator": "^3.5.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
+    },
+    "rules": {
+      "no-unused-vars": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}

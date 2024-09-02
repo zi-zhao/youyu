@@ -1,0 +1,27 @@
+/* 设置滚动条的宽度和背景颜色 */
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
+
+/* 对于 Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(141, 140, 140, 0.5) #F5F5F5;
+}
+
+/* 滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(141, 140, 140, 0.5);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+/* 滚动条滑块在悬停状态的样式 */
+::-webkit-scrollbar-thumb:hover {
+    transform: scaleX(2.5); /* 5px 是2px的2.5倍 */
+    background-color: rgba(61, 61, 61, 0.5);
+    cursor: pointer;
+}

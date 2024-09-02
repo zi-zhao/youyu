@@ -1,0 +1,247 @@
+/* 整个页面滚动条 */
+/* 调整滚动条宽度和颜色 */
+::-webkit-scrollbar {
+    width: 8px; /* 增加纵向滚动条的宽度 */
+    height: 8px; /* 增加横向滚动条的高度 */
+    background: transparent;
+}
+
+/* 定义滚动条轨道，设置为透明 */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0); /* 内阴影 */
+    background: transparent; /* 将轨道背景设置为透明 */
+}
+
+/* 定义滑块，设置为浅灰色并增加内阴影 */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); /* 添加淡灰色内阴影 */
+    background-color: #d3d3d3; /* 滑块的颜色改为浅灰色 */
+    border-radius: 10px; /* 保持圆角不变 */
+}
+/* 当鼠标悬停在滚动条滑块上时改变滑块的颜色 */
+::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+}
+
+
+
+
+
+/* message信息提示 */
+.el-message{
+    margin-top: 45px;
+}
+
+/* "请先登录"的提示框 */
+.large-message {
+    font-size: 1.4rem; /* 调整字体大小 */
+    padding: 15px 25px; /* 调整内边距 */
+    display: flex;
+    justify-content: center;
+}
+.large-message .el-message__content {
+    font-size: 1.2rem ;
+    letter-spacing: 1px;
+}
+  
+
+/* 定义全局的h1样式 */
+h1 {
+    font-size: 1.7em; 
+    margin: 2rem 0;
+}
+
+/* 定义全局的h2样式 */
+h2 {
+    font-size: 1.4em;
+    margin: 2rem 0;
+}
+
+/* 定义全局的h3样式 */
+h3 {
+    font-size: 1.2em; 
+    margin: 2rem 0;
+}
+h4 {
+    font-size: 1.2em; 
+    margin: 2rem 0;
+}
+h5 {
+    font-size: 1.2em; 
+    margin: 2rem 0;
+}
+/* 使用v-html获取到的文字行高 */
+.html-content * {
+    line-height: 2;
+    margin-bottom: 1.5rem;
+}
+.html-content p img{
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+}
+/* 下面是修改全局单选框样式 */
+/* 修改选中状态的颜色 */
+.el-radio__input.is-checked .el-radio__inner {
+    border:none; 
+    background-color: #fff; 
+}
+/* 修改选中状态的图标颜色，通常是一个白色的圆点 */
+.el-radio__input.is-checked .el-radio__inner::after {
+    background-color: #000; 
+}
+/* 去除选中框的圆点 */
+.el-radio__input.is-checked .el-radio__inner::after {
+    display: none;
+}
+/* 添加对勾图案 */
+.el-radio__input.is-checked .el-radio__inner::before {
+    content: ""; 
+    background-image: url('../src/assets/CheckMark.svg');
+    background-size: cover;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    color: #000;  
+}
+/* 选中部分字体颜色 */
+.el-radio__input.is-checked + .el-radio__label {
+    color: #606266;  
+    border: none;
+}
+.radio_share span .ptext{
+  font-size: 12px;
+  margin-left: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* 下面是修改多选框的样式 */
+/* 修改选中状态的颜色 */
+.el-checkbox__input.is-checked .el-checkbox__inner {
+    border:none; 
+    background-color: #fff; 
+}
+/* 修改选中状态的图标颜色，通常是一个白色的圆点 */
+.el-checkbox__input.is-checked .el-checkbox__inner::after {
+    background-color: #000; 
+}
+/* 去除选中框的圆点 */
+.el-checkbox__input.is-checked .el-checkbox__inner::after {
+    display: none;
+}
+.el-checkbox__inner{
+    border-radius: 100%;
+}
+/* 添加对勾图案 */
+.el-checkbox__input.is-checked .el-checkbox__inner::before {
+    content: ""; 
+    background-image: url('@/assets/CheckMark.svg');
+    background-size: cover;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    color: #000;  
+}
+/* 选中部分字体颜色 */
+.el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #606266;  
+    border: none;
+}
+
+/* 超过四行文本，其余以省略号显示 */
+.multi-line-ellipsis-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* 设置为文本的行数 */
+  line-clamp: 4; /* 这是标准属性，但目前支持度不广泛 */
+  text-overflow: ellipsis;
+}
+/* 超过三行文本，其余以省略号显示 */
+.multi-line-ellipsis-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 设置为文本的行数 */
+  line-clamp: 3; /* 这是标准属性，但目前支持度不广泛 */
+  text-overflow: ellipsis;
+}
+/* 超过两行文本，其余以省略号显示 */
+.multi-line-ellipsis-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 设置为文本的行数 */
+  line-clamp: 2; /* 这是标准属性，但目前支持度不广泛 */
+  text-overflow: ellipsis;
+}
+/* 超过一行文本，其余以省略号显示 */
+.multi-line-ellipsis-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* 设置为文本的行数 */
+  line-clamp: 1; /* 这是标准属性，但目前支持度不广泛 */
+  text-overflow: ellipsis;
+}
+
+/* 文章/分享编辑等 el-input type = 'text' 的输入框样式 */
+.eidt-input .el-input__wrapper{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #efefef;
+}
+.eidt-input .el-input__wrapper{
+    height: 40px;
+}  
+.eidt-input .el-input__wrapper.is-focus{
+    box-shadow: 0 2px 6px #cfd7e2;
+    border: 1px solid #d7d7d7;
+}
+
+/* 文章/分享编辑等 el-input type = 'textarea' 的输入框样式 */
+.eidt-input .el-textarea__inner{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #efefef;
+}
+.eidt-input .el-textarea__inner{
+    height: 60px;
+}  
+.eidt-input .el-textarea__inner:focus{
+    box-shadow: 0 2px 6px #cfd7e2;
+    border: 1px solid #d7d7d7;
+}
+.eidt-input .eidt-input textarea {
+    overflow: hidden; 
+}
+
+/* 评论区输入框样式 */
+.comment-input .el-textarea__inner{
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    border-radius: 18px;
+    box-shadow: 0 1px 8px 2px rgba(0,0,0,.07);
+    outline: none;
+    padding: 15px 20px 15px;
+    color: #666;
+    min-height: 23px;
+    resize: none;
+}
+.comment-smallinput .el-textarea__inner{
+    padding: 5px 10px 5px;
+}
+
+/* 问答聊天页面输入框样式 */
+.livechat-input .el-textarea__inner{
+    height: 19px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #F8F8F8;
+}
+.livechat-input .el-input__count {
+    background: #f8f8f8;
+}
